@@ -16,17 +16,15 @@ h1{
 
 .container{
   margin: auto;
-  max-width: 1500px; 
+  max-width: 1500px;
+  padding: 75px 150px;
 }
 
 .ba-header{
   overflow: auto;
-  padding-top: 50px;
   height: 100vh;
   background: #fff url('../images/backgrounds/img.png') 50% no-repeat;
   background-size: cover;
-  padding-left: 100px;
-  padding-right: 100px;  
   position: relative;
 }
 
@@ -72,7 +70,6 @@ h1{
 
 .ba-text{
   width: 50%;
-  padding-right: 100px;
   height:500px;
   position: absolute;
   top: 35%;
@@ -107,41 +104,37 @@ h1{
   right: 50%;
   margin-right:-15px;
 }
-
-
-.ba-About{
+  
+.ba-about{
   background-color: #00c2c2;
   overflow: auto;  
-  height: 700px; 
 }
 
-.ba-About__ba-photo{
+.ba-about__ba-photo{
   float: left;
   width: 50%;
-  height: 100%;
-  
 }
 
-.ba-About__ba-photo img{
-  width: 100%;
-  height: 100%;
+.ba-photo__mainphoto{
+  display: flex;
   object-fit: contain;
-  object-position: bottom;
+  object-position: center;
   display: inline-block;
 }
+.ba-photo__mainphoto img{
+  width: 100%;
+}
 
-.ba-About__text{
+.ba-about__text{
   float: right;
   width: 50%;
-  height: 700px; 
-  display:flex;
-  justify-content:center;
-  align-items:center; 
 }
 
 .ba-cover{
   color: #fff;
   width: 500px;
+  margin: 10% auto;
+  padding-left: 70px;
 }
 
 .ba-cover__title{
@@ -154,25 +147,28 @@ h1{
 }
 
 
-.ba-Services{
-  background-color: #70bfff;
-  overflow: auto;  
-  height: 700px; 
+.ba-services{
+  background-color: #70bfff; 
+  /*border: solid yellow;*/
 }
 
-.ba-Services__button-block{
+.cover-block{
+  overflow: auto; 
+  /*border: solid green;*/
+}
+.ba-services__button-block{
   float: left;
   width: 50%;
-  height: 100%;
-  height: 700px; 
+  /*border: solid pink;*/
 }
 
 .button-block__cover{
+  height: 600px;
   display:flex;
   justify-content:center;
   align-items:center; 
   flex-direction: column;
-  height: 700px;
+  /*border: solid black;*/
 }
 
 .button-block__btn{
@@ -193,44 +189,41 @@ h1{
   background: #fff url(../images/icons/box4.png) 95% no-repeat;
 }
 
-.ba-Services__photo{
+.ba-services__photo{
   float: right;
   width: 50%;
-  height: 100%;
-  background: url(../images/backgrounds/img3.png) 50% no-repeat;
+  /*border: solid red;*/
 }
 .photo__sign{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: relative; 
+  /*border: solid yellow;*/
 }
 .photo__sign h1 {
+  width: 100%;
+  display: block;
   text-align: center;
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  top: 35%;
+  /*border: solid blue;*/
+}
+.photo__sign img{
+  width: 100%;
 }
 
 
-.ba-Gallery {
-  background-color: #ffe92f; 
-  height: 1536px; 
-  padding: 0 165px; 
+.ba-gallery {
+  background-color: #ffe92f;
 }
 
-.ba-Gallery__title{
+.ba-gallery__title{
   margin: 0 auto;
   text-align: center;
   width: 560px;
-  padding-top: 85px;
   padding-bottom: 40px;
 }
 
-.ba-Gallery__photos{
- padding: 0 50px;
+.ba-gallery__photos{
  padding-bottom: 50px;
 }
 
@@ -249,17 +242,17 @@ h1{
   padding-left: 20px; 
 }
 
-.ba-width-3-4 {
-  width: 75%;
+.ba-width-2-3 {
+  width: 66.66666%;
 }
-.ba-width-1-4 {
-  width: 25%;
+.ba-width-1-3 {
+  width: 33.33333%;
 }
 .ba-width-1-2 {
   width: 50%;
 }
 .ba-width-1 {
-  width: 90%;
+  width: 100%;
 }
 
 .ba-grid img{
@@ -268,7 +261,7 @@ h1{
     width: 100%;
 }
 
-.ba-Gallery_btn{
+.ba-gallery_btn{
   background-color: #5585a2;
   margin: 0 auto;
   display: block;
@@ -280,14 +273,14 @@ h1{
   height: 53px;
 }
 
-.Additional{
+.ba-additional{
   height: 500px;
   background: #fff url('../images/backgrounds/img9.png') 100% no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.Additional__cover{
+.additional__cover{
   position: absolute;
   top: 150px;
   left: 100px;
@@ -295,24 +288,24 @@ h1{
   height: 300px;
 }
 
-.Additional__title{
+.additional__title{
   font-size: 40px;
   margin: 0 0 25px;
 }
 
-.Additional__info{
+.additional__info{
   font-size: 17px;
   width: 570px;
   margin: 0 0 35px;
 }
 
-.Additional__emailfield{
+.additional__emailfield{
   width: 570px;
   height: 50px;
   margin-right: 30px;
 }
 
-.Additional__btn{
+.additional__btn{
   width: 170px;
   height: 50px;
   background-color: #96b92c; 
@@ -322,14 +315,12 @@ h1{
   border: none;
 }
 
-.ba-Blog{
-  height: 860px;
+.ba-blog{
   background-color: #b07cf7;
   color: #fff;
-  padding: 0 100px;
 }
 
-.ba-Blog__header-block{
+.ba-blog__header-block{
   margin: 0 auto;
   text-align: center;
 }
@@ -345,12 +336,11 @@ h1{
   margin-bottom: 30px;
 }
 
-.ba-Blog__photo-block{
+.ba-blog__photo-block{
   max-width: 100%;
   margin: 0 auto;
   overflow: auto;
   margin-bottom: 50px;
-
 }
 
 .photo-items{
@@ -403,7 +393,7 @@ h1{
   font-weight: lighter;
 }
 
-.ba-Blog__btn{
+.ba-blog__btn{
   background-color: #f72b3b;
   width: 185px;
   height: 52px;
@@ -415,19 +405,16 @@ h1{
   border: none;
 }
 
-.ba-Contact{
-  height: 1008px;
+.ba-contact{
   background: #fff url('../images/backgrounds/img13.png') 50% no-repeat;
   background-size: cover; 
-  padding: 0 100px;
 }
-.ba-Contact__header-block{
-  padding-top: 90px;
+
+.ba-contact__header-block{
   margin: 0 auto;
 }
 
 .header-block__titles{
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -437,9 +424,10 @@ h1{
   display: block;
   margin: 0 auto;
   margin-bottom: 36px;
+  padding: 0;
 }
 
-.ba-Contact__info-block{
+.ba-contact__info-block{
   overflow: auto;
   width: 100%;
   margin: 0 auto;
@@ -483,42 +471,46 @@ input[type]::placeholder {
   color:#fff;
 }
 
-.ba-Contact__our-info{
+.ba-contact__our-info{
   float: right;
   width: 50%;
   padding-left: 100px;
 }
-.ba-Contact__our-info p{
+.ba-contact__our-info p{
   margin: 0;
 }
-.ba-Contact__our-info p:nth-child(odd){
+.ba-contact__our-info p:nth-child(odd){
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.ba-Contact__our-info p:nth-child(even){
+.ba-contact__our-info p:nth-child(even){
   margin-bottom: 20px;
 }
 
 .ba-footer{
-  height: 90px;
   background-color: #262626;
   color: rgba(255, 255, 255, 0.4);
+  padding: 0 165px;
+}
+.ba-footer__cover-block{
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 165px;
 }
 
 .ba-footer p{
-  margin: 0;
   text-align: center;
   margin: 25px 0;
 }
 
-
 .ba-footer__logo a{
   background-color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+.ba-footer__author span{
+  color: red;
 }
 
 
